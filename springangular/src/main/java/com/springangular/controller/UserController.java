@@ -12,6 +12,7 @@ import com.springangular.entity.User;
 import com.springangular.serviceimpl.UserServiceImpl;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class UserController {
 @Autowired
 UserServiceImpl userServiceImpl;
