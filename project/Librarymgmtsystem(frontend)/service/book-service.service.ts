@@ -37,7 +37,7 @@ export class BookServiceService {
     return this.http.put<Bookclass>(`${this.putUrl}/${id}`,book)
    }
    public deleteBook(id:number):Observable<any>{
-    return this.http.delete<Bookclass>(`${this.deleteUrl}/${id}`);
+    return this.http.delete(`${this.deleteUrl}/${id}`);
    }
   public getBookList(): Observable<Bookclass[]> {
     return this.http.get<Bookclass[]>(this.getUrl);

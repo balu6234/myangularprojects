@@ -34,8 +34,8 @@ export class StudentServiceService {
   public updateStudent(id:number,student:Studentclass):Observable<object>{
     return this.http.put<Studentclass>(`${this.putStudentUrl}/${id}`,student);
    }
-   public deleteStudent(id:number):Observable<Studentclass>{
-    return this.http.delete<Studentclass>(`${this.deleteStudentUrl}/${id}`);
+   public deleteStudent(id:number):Observable<any>{
+    return this.http.delete(`${this.deleteStudentUrl}/${id}`);
    }
    getStudents(id: number): Observable<Studentclass> {
     return this.http.get<Studentclass>(`${this.getbyIdUrl}/${id}`);

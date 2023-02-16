@@ -12,8 +12,8 @@ const routes: Routes = [
   {path: "getstudents", component:StudentlistComponent},
   {path: "addbooks", component:AddbookComponent},
   {path: "addstudents", component:AddstudentComponent},
- {path: '', redirectTo:'getbooks', pathMatch: 'full'},
- {path: '', redirectTo:'getstudents', pathMatch: 'full'},
+ //{path: '', redirectTo:'getbooks', pathMatch: 'full'},
+ //{path: '', redirectTo:'getstudents', pathMatch: 'full'},
   {path: 'updatebook/:id', component:UpdatebookComponent},
   {path: 'updatestudent/:id', component:UpdatestudentComponent}
 ];
