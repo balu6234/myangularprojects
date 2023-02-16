@@ -1,0 +1,32 @@
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10">
+     <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a routerLink="/addbooks" class="nav-link" routerLinkActive="active">Add Books</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/addstudents" class="nav-link" routerLinkActive="active">Add students</a>
+          </li>
+            <li class="nav-item">
+                <a routerLink="/getbooks" class="nav-link" routerLinkActive="active">Book List</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/getstudents" class="nav-link" routerLinkActive="active">Student List</a>
+          </li>
+          </ul>
+        </nav>
+        <div class="container">
+          <br>
+          <h2 style="text-align: center;">{{title}}</h2>
+          <hr>  
+          <div class="card">
+            <div class="card-body">
+          <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+        

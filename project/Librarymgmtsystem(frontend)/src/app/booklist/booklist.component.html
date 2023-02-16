@@ -1,0 +1,30 @@
+<div class="card my-5">
+    <div class="card-body">
+        <div class="card my-5">
+            <div class="card-body">
+              <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Publication</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let books of book ">
+                    <td>{{books.id}}</td>
+                    <td>{{books.name}}</td>
+                    <td>{{books.author}}</td>
+                    <td>{{books.price}}</td>
+                    <td>{{books.publication}}</td>
+                    <td><button (click)="deleteBook(books.id)" class="btn btn-danger">Delete</button>
+                      <button (click)="updateBook(books.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                  </td>
+                  </tr>
+                </tbody>
+            </table>
+            </div>
+          </div>
